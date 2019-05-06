@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="com.pusher:pusher-java-client:1.8.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/pusher-java-client-1.8.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/gson-2.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/java-websocket-1.4.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ideaLibSources/pusher-java-client-1.8.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

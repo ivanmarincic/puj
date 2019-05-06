@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane fx:id="loginScreen" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="500.0" prefWidth="500.0" styleClass="login" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="michat.view.controllers.LoginController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="300.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="300.0" vgrow="SOMETIMES" />
+        <RowConstraints vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <VBox alignment="CENTER_LEFT" minWidth="-Infinity" prefHeight="200.0" prefWidth="150.0" styleClass="card" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <children>
+                <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="200.0">
+                    <children>
+                        <Label alignment="CENTER" text="Prijavite se u sustav">
+                            <font>
+                                <Font name="Nunito Bold" size="24.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+                <Label text="Username">
+                    <VBox.margin>
+                        <Insets bottom="8.0" />
+                    </VBox.margin>
+                </Label>
+                <TextField fx:id="usernameField">
+                    <VBox.margin>
+                        <Insets bottom="8.0" />
+                    </VBox.margin>
+                </TextField>
+                <Label text="Lozinka">
+                    <VBox.margin>
+                        <Insets bottom="8.0" />
+                    </VBox.margin>
+                </Label>
+            <PasswordField fx:id="passwordField" />
+                <Hyperlink fx:id="registerLink" text="Još nemate račun?" />
+                <HBox alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="200.0">
+                    <children>
+                        <Button fx:id="loginButton" alignment="CENTER_RIGHT" mnemonicParsing="false" styleClass="primary" text="Prijavi se" />
+                    </children>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</GridPane>

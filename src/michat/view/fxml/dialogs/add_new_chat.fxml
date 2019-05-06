@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="add-new-chat" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
+    <padding>
+        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+    </padding>
+    <Label text="Naziv:">
+        <VBox.margin>
+          <Insets bottom="8.0" />
+        </VBox.margin>
+    </Label>
+    <TextField id="name">
+        <VBox.margin>
+          <Insets bottom="8.0" />
+        </VBox.margin>
+    </TextField>
+    <TextField id="search" promptText="Pretraži korisnike">
+        <VBox.margin>
+          <Insets bottom="8.0" />
+        </VBox.margin>
+    </TextField>
+    <GridPane alignment="CENTER" VBox.vgrow="ALWAYS">
+        <ListView id="users" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+      <ProgressIndicator id="progress" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.valignment="CENTER" GridPane.vgrow="NEVER" />
+      <columnConstraints>
+         <ColumnConstraints />
+      </columnConstraints>
+      <rowConstraints>
+         <RowConstraints />
+      </rowConstraints>
+    </GridPane>
+    <HBox alignment="CENTER_RIGHT">
+        <Button id="save" mnemonicParsing="false" styleClass="primary" text="Spremi" />
+    </HBox>
+</VBox>

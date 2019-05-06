@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?scenebuilder-stylesheet style.css?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="root" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" styleClass="root" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="michat.view.controllers.MainController">
+
+    <HBox fx:id="windowTitleBar" alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="32.0" styleClass="title-bar" VBox.vgrow="NEVER">
+        <Label maxWidth="1.7976931348623157E308" text="MI Chat" HBox.hgrow="ALWAYS">
+            <HBox.margin>
+                <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+            </HBox.margin>
+        </Label>
+        <Button fx:id="minimizeWindow" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="32.0" prefWidth="32.0">
+            <styleClass>
+                <String fx:value="icon" />
+                <String fx:value="flat" />
+                <String fx:value="minimize" />
+            </styleClass>
+        </Button>
+        <Button fx:id="maximizeWindow" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="32.0" prefWidth="32.0">
+            <styleClass>
+                <String fx:value="icon" />
+                <String fx:value="flat" />
+                <String fx:value="maximize" />
+            </styleClass>
+        </Button>
+        <Button fx:id="closeWindow" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="32.0" prefWidth="32.0" HBox.hgrow="ALWAYS">
+            <styleClass>
+                <String fx:value="flat" />
+                <String fx:value="close" />
+                <String fx:value="icon" />
+            </styleClass>
+        </Button>
+    </HBox>
+    <GridPane id="content" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="root-content" VBox.vgrow="ALWAYS">
+        <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.valignment="TOP" GridPane.vgrow="ALWAYS">
+            <HBox maxHeight="1.7976931348623157E308" maxWidth="-Infinity" prefWidth="300.0" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" HBox.hgrow="NEVER">
+                <fx:include fx:id="sideMenu" source="sidemenu.fxml" />
+            </HBox>
+            <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" HBox.hgrow="ALWAYS">
+                <fx:include fx:id="conversation" source="conversation.fxml" />
+            </HBox>
+        </HBox>
+        <GridPane fx:id="dialogContainer" visible="false" managed="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: rgba(0,0,0,0.5);" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="700.0" />
+                <ColumnConstraints hgrow="SOMETIMES" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="500.0" vgrow="SOMETIMES" />
+                <RowConstraints vgrow="SOMETIMES" />
+            </rowConstraints>
+        </GridPane>
+        <fx:include fx:id="login" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" source="login.fxml" visible="false" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+        <columnConstraints>
+            <ColumnConstraints />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints />
+        </rowConstraints>
+    </GridPane>
+</VBox>

@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="MIChat:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/MIChat_jar</output-path>
+    <root id="archive" name="MIChat.jar">
+      <element id="module-output" name="MIChat" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/jackson-databind-2.9.8.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/jackson-annotations-2.9.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/jackson-core-2.9.8.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/jackson-annotations-2.9.8.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/pusher-java-client-1.8.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/gson-2.2.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/java-websocket-1.4.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/okhttp-3.14.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/okio-1.17.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/borderless-scene-1.0.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

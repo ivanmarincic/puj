@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.PasswordField?>
+<GridPane alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <columnConstraints>
+      <ColumnConstraints maxWidth="1.7976931348623157E308" />
+      <ColumnConstraints maxWidth="-Infinity" prefWidth="300.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <VBox maxWidth="1.7976931348623157E308" minWidth="-Infinity" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.valignment="TOP" GridPane.vgrow="ALWAYS">
+      <padding>
+         <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+      </padding>
+      <Label text="Username:">
+         <VBox.margin>
+            <Insets bottom="8.0" />
+         </VBox.margin>
+      </Label>
+      <TextField id="username" editable="false">
+         <VBox.margin>
+            <Insets bottom="8.0" />
+         </VBox.margin>
+      </TextField>
+      <Label text="Ime i Prezime:">
+         <VBox.margin>
+            <Insets bottom="8.0" />
+         </VBox.margin>
+      </Label>
+      <TextField id="fullname">
+         <VBox.margin>
+            <Insets bottom="8.0" />
+         </VBox.margin>
+      </TextField>
+      <Label text="Email:">
+         <VBox.margin>
+            <Insets bottom="8.0" />
+         </VBox.margin>
+      </Label>
+      <TextField id="email">
+         <VBox.margin>
+            <Insets bottom="8.0" />
+         </VBox.margin>
+      </TextField>
+      <Button id="change-password" mnemonicParsing="false" styleClass="primary" text="Izmjeni lozinku">
+         <VBox.margin>
+            <Insets bottom="8.0" />
+         </VBox.margin>
+      </Button>
+      <Label id="password-label" managed="false" text="Lozinka:" visible="false">
+         <VBox.margin>
+            <Insets bottom="8.0" />
+         </VBox.margin>
+      </Label>
+      <PasswordField id="password" managed="false" visible="false">
+         <VBox.margin>
+            <Insets bottom="8.0" />
+         </VBox.margin>
+      </PasswordField>
+      <Label id="password-label-error" managed="false" text="Lozinka mora biti veća od 6 znakova" visible="false" style="-fx-text-fill: red">
+         <VBox.margin>
+            <Insets bottom="8.0" />
+         </VBox.margin>
+      </Label>
+      <Label id="password-confirm-label" managed="false" text="Potvrdi lozinku:" visible="false">
+         <VBox.margin>
+            <Insets bottom="8.0" />
+         </VBox.margin>
+      </Label>
+      <PasswordField id="password-confirm" managed="false" visible="false">
+         <VBox.margin>
+            <Insets bottom="8.0" />
+         </VBox.margin>
+      </PasswordField>
+      <Label id="password-confirm-label-error" managed="false" text="Lozinke nisu iste" visible="false" style="-fx-text-fill: red">
+         <VBox.margin>
+            <Insets bottom="8.0" />
+         </VBox.margin>
+      </Label>
+      <HBox alignment="CENTER_RIGHT">
+         <Button id="save" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" styleClass="primary" text="Spremi">
+            <HBox.margin>
+               <Insets />
+            </HBox.margin>
+         </Button>
+      </HBox>
+   </VBox>
+   <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.hgrow="NEVER" GridPane.valignment="TOP" GridPane.vgrow="NEVER">
+      <ImageView id="image" fitHeight="300.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true" styleClass="profile">
+         <VBox.margin>
+            <Insets bottom="8.0" />
+         </VBox.margin>
+      </ImageView>
+      <Button id="change-image" mnemonicParsing="false" styleClass="primary" text="Odaberi sliku..." />
+   </VBox>
+</GridPane>
